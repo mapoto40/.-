@@ -84,14 +84,14 @@ body{
     display: flex;
     flex-direction: column;
     width: 7.5px;
-    height: 500px;
+    height: 50vh;
     border-radius: 5px;
     background: #E7E7E7;
 }
 .list_affiche_title{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 50vh;
     border-radius: 5px;
 }
 .list_affiche_title div{
@@ -100,12 +100,12 @@ body{
     cursor: pointer;
 }
 .list_affiche div{
-    height: 125px;
+    height: 13vh;
     border-radius: 10px;
 }
 .carte_projects{
     margin: auto;
-    width: 55%;
+    width: 60%;
     height: 35vh;
     border-radius: 25px;
     overflow: hidden;
@@ -207,4 +207,15 @@ footer{
 ::-webkit-scrollbar-thumb{
     background: rgb(201, 201, 201);
     border-radius: 10vh;
+}
+@media screen and (max-height: 850px) {
+    .carte_projects div p{
+        font-size: 18px;
+    }
+    .carte_projects div a{
+        font-size: 16px;
+    }
+    .carte_projects{
+        width: 75%;
+    }
 }
